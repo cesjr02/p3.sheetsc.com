@@ -45,11 +45,12 @@
 	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron">
 		<div class="container">
-			<h1>Website Bid Calculator</h1>
+			<h1 class="h1" >Website Bid Calculator</h1>
 			<p>
 				Use the application below to get a bid for web services. Select different options and view the corresponding hours needed and associate costs. Your total will be dynamically calculated in real-time.
 			</p>
-			<p><a class="btn btn-primary btn-lg" role="button">Preview Bid &raquo;</a></p>
+			<p><a class="btn btn-default btn-lg" role="button">Preview Bid &raquo;</a>
+			<a class="btn btn-primary btn-lg" role="button">Print Bid &raquo;</a></p>
 		</div>
 	</div>
 	
@@ -58,73 +59,82 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<h2>Client Information</h2>
+			<div class="col-md-12">
+				
+				<h2 class="h2" >Client Information</h2>
 				<hr>
 					<form role="form">
 						<div class="form-group">
 							<label>Client Name:</label>
-							<input class="form-control" placeholder="Enter name">
+							
+							<input class="form-control input-lg" placeholder="Enter name">
+							
 						</div>
 						
 						<div class="form-group">
 							<label>Project Name:</label>
-							<input class="form-control" placeholder="Enter project name">
+							<input class="form-control input-lg" placeholder="Enter project name">
 						</div>
 						
 						<div class="form-group">
 							<label>Phone:</label>
-							<input type="tel" class="form-control" placeholder="Enter phone number">
+							<input type="tel" class="form-control input-lg" placeholder="Enter phone number">
 						</div>
 						
 						<div class="form-group">
 							<label>Address:</label>
-							<input class="form-control" placeholder="Enter address">
+							<input class="form-control input-lg" placeholder="Enter address">
 						</div>
 						
 						<div class="form-group">
 							<label>Date:</label>
-							<input type="date" class="form-control">
+							<input type="date" class="form-control input-lg">
 						</div>	
 						
 						<div class="form-group">
 							<label>Budget:</label>
-							<input class="form-control" placeholder="Enter your budget">
+							<input class="form-control input-lg" placeholder="Enter your budget">
 						</div>	
 				
 					</form>
 				
-			</div>
+			</div><!-- end of col -->	
+		</div><!-- end of row -->
+	</div><!-- end of container -->
+
 			
-			<div class="col-md-4">
-				<h2>Web Design</h2>
+			
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2 class="h2" >Web Design</h2>
 				<hr>
 				<h3>Site Design</h3>
 					<div class="radio">
 						<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-						<p>Update or modify existing site - 3hrs</p>
+						<p>Update or modify existing site - 3 hrs</p>
 						</label>
 					</div>
 					
 					<div class="radio">
 						<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						<p>Has template for customization - 6hrs</p>
+						<p>Has template for customization - 6 hrs</p>
 						</label>
 					</div>
 					
 					<div class="radio">
 						<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-						<p>Needs template for customization - 10hrs</p>
+						<p>Needs template for customization - 10 hrs</p>
 						</label>
 					</div>
 					
 					<div class="radio">
 						<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-						<p>Build custom site - 20hrs</p>
+						<p>Build custom site - 20 hrs</p>
 						</label>
 					</div>
 					
@@ -134,21 +144,21 @@
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Image Gallery - 4hrs</p>
+						<p>Image Gallery - 4 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Animated Navigation Menu - 3hrs</p>
+						<p>Animated Navigation Menu - 3 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Interactive Advertisement - 6hrs</p>
+						<p>Interactive Advertisement - 6 hrs</p>
 						</label>
 					</div>
 					
@@ -159,35 +169,35 @@
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Responsive Design - 12hrs</p>
+						<p>Responsive Design - 12 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>JQuery Mobile Site - 40hrs</p>
+						<p>JQuery Mobile Site - 40 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Social Media Integration - 6hrs</p>
+						<p>Social Media Integration - 6 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Logo Design - 4hrs</p>
+						<p>Logo Design - 4 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Site Branding - 6hrs</p>
+						<p>Site Branding - 6 hrs</p>
 						</label>
 					</div>
 					
@@ -197,43 +207,43 @@
 			
 			
 			
-			<div class="col-md-4">
-				<h2>Web Development</h2>
+			<div class="col-md-6">
+				<h2 class="h2" >Web Development</h2>
 				<hr>
 				<h3>Under the Hood</h3>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Content Management System 6hrs</p>
+						<p>Content Management System 6 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Admin Login - 5hrs</p>
+						<p>Admin Login - 5 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Contact Form - 3hrs</p>
+						<p>Contact Form - 3 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Email auto responders - 2hrs</p>
+						<p>Email auto responders - 2 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Custom blog site - 6hrs</p>
+						<p>Custom blog site - 6 hrs</p>
 						</label>
 					</div>
 					
@@ -250,23 +260,25 @@
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Link Building - 6hrs</p>
+						<p>Link Building - 6 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>User Traffic Reports - 1hr</p>
+						<p>User Traffic Reports - 1 hr</p>
 						</label>
 					</div>
 					
 					
 					<h3>Summary</h3>
-						<div class="form-group">
+						<div class="form-group push">
 							<label>(for developer use only)</label>
 							<textarea class="form-control" rows="3"></textarea>
 						</div>
+						
+						
 					
 
 					
