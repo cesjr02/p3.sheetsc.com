@@ -27,7 +27,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				
-				<a href="#" class="navbar-brand">Website Bid Calculator</a>
+				<a href="#" class="navbar-brand">Web Services Calculator</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				
@@ -35,32 +35,39 @@
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#">Preview</a></li>
 					<li><a href="#">Print</a></li>
-					<li><a href="#">Reset</a></li>
+					<li><a href="#reset" data-toggle="modal">Reset</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	
 	
-	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<!-- main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="h1" >Website Bid Calculator</h1>
+			<h1 class="h1">Welcome.</h1>
 			<p>
-				Use the application below to get a bid for web services. Select different options and view the corresponding hours needed and associate costs. Your total will be dynamically calculated in real-time.
+				Use the application below to receive a bid for web services. Select from the list of options and view the corresponding hours of development and associate costs. Your total will be dynamically calculated and compared to your budget in real-time.
 			</p>
-			<p><a class="btn btn-default btn-lg" role="button">Preview Bid &raquo;</a>
-			<a class="btn btn-primary btn-lg" role="button">Print Bid &raquo;</a></p>
+			
+			<button type="button" class="btn btn-default">
+				<span class="glyphicon glyphicon-ok-sign"></span> Preview Bid
+  			</button>
+			
+			<button type="button" class="btn btn-primary">
+				<span class="glyphicon glyphicon-print"></span> Print Bid
+  			</button>
+			
+			
 		</div>
 	</div>
 	
 	
 	
-	
+	<!-- form for client information -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				
+			<div class="col-md-12">			
 				<h2 class="h2" >Client Information</h2>
 				<hr>
 					<form role="form">
@@ -103,13 +110,13 @@
 	</div><!-- end of container -->
 
 			
-			
+	<!-- frontend options -->		
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<h2 class="h2" >Web Design</h2>
+				<h2 class="h2">Design & Front-end</h2>
 				<hr>
-				<h3>Site Design</h3>
+				<h3 class="h3">Basics</h3>
 					<div class="radio">
 						<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
@@ -134,12 +141,12 @@
 					<div class="radio">
 						<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-						<p>Build custom site - 20 hrs</p>
+						<p>Build Custom Site - 20 hrs</p>
 						</label>
 					</div>
 					
 				
-					<h3>Interactivity</h3>
+					<h3 class="h3">Interactive Elements</h3>
 					
 					<div class="checkbox">
 						<label>
@@ -158,13 +165,13 @@
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Interactive Advertisement - 6 hrs</p>
+						<p>Advertisement Slider - 6 hrs</p>
 						</label>
 					</div>
 					
 					
 					
-					<h3>Add Ons</h3>
+					<h3 class="h3">Add Ons</h3>
 					
 					<div class="checkbox">
 						<label>
@@ -199,23 +206,20 @@
 						<input type="checkbox" value="">
 						<p>Site Branding - 6 hrs</p>
 						</label>
-					</div>
-					
-					
-					
+					</div>		
 			</div>
 			
 			
-			
+			<!-- backend development options -->
 			<div class="col-md-6">
-				<h2 class="h2" >Web Development</h2>
+				<h2 class="h2">Back-end Development</h2>
 				<hr>
-				<h3>Under the Hood</h3>
+				<h3 class="h3">Under the Hood</h3>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Content Management System 6 hrs</p>
+						<p>Content Management System - 6 hrs</p>
 						</label>
 					</div>
 					
@@ -236,24 +240,24 @@
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Email auto responders - 2 hrs</p>
+						<p>Email Auto Responders - 2 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Custom blog site - 6 hrs</p>
+						<p>Custom Blog - 6 hrs</p>
 						</label>
 					</div>
 					
 				
-					<h3>Search Engine Optimization</h3>
+					<h3 class="h3">Search Engine Optimization</h3>
 					
 					<div class="checkbox">
 						<label>
 						<input type="checkbox" value="">
-						<p>Meta tag keyword optimization  - 5 hrs</p>
+						<p>Meta Tag Keyword Optimization  - 5 hrs</p>
 						</label>
 					</div>
 					
@@ -271,37 +275,55 @@
 						</label>
 					</div>
 					
-					
-					<h3>Summary</h3>
-						<div class="form-group push">
-							<label>(for developer use only)</label>
-							<textarea class="form-control" rows="3"></textarea>
-						</div>
-						
-						
-					
-
-					
-					
+					<h2 class="h2">Total</h2>
+					<hr>
+					<p>Budget:</p>
+					<p>Total Hours:</p>
+					<p>Total Cost:</p>
+			
 			</div><!-- end of col -->
 		</div><!-- end of row -->
 	</div><!-- end of container -->
 	
 	
+	<!-- summary of work or contractual terms -->
+	<div class="container">
+		<h2 class="h2">Summary</h2>
+		<hr>
+			<div class="form-group">
+				<label>(for developer use only)</label>
+				<textarea class="form-control" rows="6"></textarea>
+			</div>
+	</div><!-- end of container -->
 	
-	
-	
-	
+
 	<!-- footer -->
 	<div class="navbar navbar-default navbar-fixed-bottom">
-	
 		<div class="container">
 			<p class="navbar-text pull-right">Application Developed by CJ Sheets</p>
-		</div>
-	
+		</div>	
 	</div>
 	
 	
+	<!-- modal for form reset -->
+	<div class="modal fade" id="reset">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Reset Form</h4>
+				</div>
+					<div class="modal-body">
+					<p>Are you sure you want to reset this form?</p>
+				</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Reset</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+		
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>

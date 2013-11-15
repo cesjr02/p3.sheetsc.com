@@ -1,12 +1,30 @@
-.h1, .h2, .h3 {
-
+body {
+	margin-bottom: 80px;
 }
-
 
 .h1 {
 	padding-top: 40px;
+	font-weight: 300;
 }
 
-.push {
-	margin-bottom: 100px;
+.h2 {
+	font-weigh: 400;
+	padding-bottom: 0;
+	padding-top: 25px;
+	color: #6a88ac;
+	font-weight: 300;
+}
+
+.h3 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+hr {
+	margin-top: 0;
+}
+
+.btn-primary {
+	background-color: #78a6de;
+	border-color: #5d92d2;
 }
