@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Website Bid Calculator</title>
+	<title>Web Services Calculator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -150,14 +150,14 @@
 					
 					<div class="checkbox">
 						<label>
-						<input type="checkbox" value="">
+						<input type="checkbox" value="" class='ielements' data-toggle='popover' title='Image Gallery' data-content='Include a scrolling image gallery to your site. Features smooth animations, user controls, and optional captions' data-placement='right' data-trigger='hover'>
 						<p>Image Gallery - 4 hrs</p>
 						</label>
 					</div>
 					
 					<div class="checkbox">
 						<label>
-						<input type="checkbox" value="">
+						<input type="checkbox" value="" class='ielements' data-toggle='popover' title='Animated Navigation Menu' data-content='Smooth animated navigation menus and dropdown submenus' data-placement='bottom' data-trigger='hover'>
 						<p>Animated Navigation Menu - 3 hrs</p>
 						</label>
 					</div>
@@ -288,7 +288,7 @@
 	
 	<!-- summary of work or contractual terms -->
 	<div class="container">
-		<h2 class="h2">Summary</h2>
+		<h2 class="h2">Agreement</h2>
 		<hr>
 			<div class="form-group">
 				<label>(for developer use only)</label>
@@ -329,5 +329,9 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		$('.ielements').popover();
+	</script>
 </body>
 </html>
