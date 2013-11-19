@@ -26,6 +26,19 @@ function calculate() {
 	}); // end of loop
 	
 	
+	// budget comparison
+	if(budget != '') {
+		if(total >= budget) {
+			$('.total-cost').css('color', 'red');
+		}
+		else {
+			$('.total-cost').css('color', 'green');
+			
+		}		
+		
+	}
+	
+	
 	$('.total-cost').html(total);
 	$('.total-hours').html(hours);
 	$('.budget').html(budget);
