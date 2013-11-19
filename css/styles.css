@@ -2,6 +2,12 @@ body {
 	margin-bottom: 80px;
 }
 
+hr {
+	margin-top: 0;
+}
+
+/* text */
+
 .h1 {
 	padding-top: 40px;
 	font-weight: 300;
@@ -20,9 +26,20 @@ body {
 	font-weight: 400;
 }
 
-hr {
-	margin-top: 0;
+.navbar-text {
+	font-size: 12px;
 }
+
+.totals {
+	font-size: 19px;
+	font-weight: 300;
+}
+
+.error {
+	color: red;
+}
+
+/* buttons */
 
 .btn-primary {
 	background-color: #78a6de;
