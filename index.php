@@ -100,7 +100,7 @@
 						
 						<div class="form-group">
 							<label>Budget:</label>
-							<input class="form-control input-lg" placeholder="Enter your budget">
+							<input class="form-control input-lg" name='budget' placeholder="Enter your budget">
 						</div>	
 				
 					</form>
@@ -118,55 +118,42 @@
 				<hr>
 				<h3 class="h3">Basics</h3>
 					<div class="radio">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-						<p>Update or modify existing site - 3 hrs</p>
-						</label>
+						<label>Update or modify existing site - 3 hrs</label>
+						<input type="radio" name="options" id="optionsRadios1" value="3">
+						
 					</div>
 					
 					<div class="radio">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						<p>Has template for customization - 6 hrs</p>
-						</label>
+						<label>Has template for customization - 6 hrs</label>
+						<input type="radio" name="options" id="optionsRadios2" value="6">
 					</div>
 					
 					<div class="radio">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-						<p>Needs template for customization - 10 hrs</p>
-						</label>
+						<label>Needs template for customization - 10 hrs</label>
+						<input type="radio" name="options" id="optionsRadios3" value="10">
 					</div>
 					
 					<div class="radio">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-						<p>Build Custom Site - 20 hrs</p>
-						</label>
+						<label>Build Custom Site - 20 hrs</label>
+						<input type="radio" name="options" id="optionsRadios4" value="20">
 					</div>
 					
 				
 					<h3 class="h3">Interactive Elements</h3>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="" class='ielements' data-toggle='popover' title='Image Gallery' data-content='Include a scrolling image gallery to your site. Features smooth animations, user controls, and optional captions' data-placement='right' data-trigger='hover'>
-						<p>Image Gallery - 4 hrs</p>
-						</label>
+						<label data-toggle='popover' title='Image Gallery' data-content='Include a scrolling image gallery to your site. Features smooth animations, user controls, and optional captions' data-placement='top' data-trigger='hover'>Image Gallery - 4 hrs</label>
+						<input type="checkbox" name='options' value="4">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="" class='ielements' data-toggle='popover' title='Animated Navigation Menu' data-content='Smooth animated navigation menus and dropdown submenus' data-placement='bottom' data-trigger='hover'>
-						<p>Animated Navigation Menu - 3 hrs</p>
-						</label>
+						<label data-toggle='popover' title='Animated Navigation Menu' data-content='Fluid animations for navigation menus and dropdown submenus' data-placement='right' data-trigger='hover'>Animated Navigation Menu - 3 hrs</label>
+						<input type="checkbox" name='options' value="3">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Advertisement Slider - 6 hrs</p>
-						</label>
+						<label data-toggle='popover' title='Advertisement Slider' data-content='Display your latest promotions or advertisements in a scrolling carousel' data-placement='bottom' data-trigger='hover'>Advertisement Slider - 6 hrs</label>
+						<input type="checkbox" name='options' value="6">
 					</div>
 					
 					
@@ -174,38 +161,28 @@
 					<h3 class="h3">Add Ons</h3>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Responsive Design - 12 hrs</p>
-						</label>
+						<label data-toggle='popover' title='Responsive Design' data-content='A web design approach aimed at building a site that provides optimal viewing experience across a wide range of devices' data-placement='top' data-trigger='hover'>Responsive Design - 12 hrs</label>
+						<input type="checkbox" name='options' value="12">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>JQuery Mobile Site - 40 hrs</p>
-						</label>
+						<label>jQuery Mobile Site - 40 hrs</label>
+						<input type="checkbox" name='options' value="40">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Social Media Integration - 6 hrs</p>
-						</label>
+						<label>Social Media Integration - 6 hrs</label>
+						<input type="checkbox" name='options' value="6">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Logo Design - 4 hrs</p>
-						</label>
+						<label data-toggle='popover' title='Logo Design' data-content='A custom designed logo will add a professional look to your website' data-placement='right' data-trigger='hover'>Logo Design - 4 hrs</label>
+						<input type="checkbox" name='options' value="4">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Site Branding - 6 hrs</p>
-						</label>
+						<label data-toggle='popover' title='Custom Branding' data-content='Branding will add a personalized brand identity that your customers will recognize' data-placement='right' data-trigger='hover'>Custom Branding - 6 hrs</label>
+						<input type="checkbox" name='options' value="6">
 					</div>		
 			</div>
 			
@@ -217,69 +194,53 @@
 				<h3 class="h3">Under the Hood</h3>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Content Management System - 6 hrs</p>
-						</label>
+						<label>Content Management System - 6 hrs</label>
+						<input type="checkbox" name='options' value="6">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Admin Login - 5 hrs</p>
-						</label>
+						<label>Admin Login - 5 hrs</label>
+						<input type="checkbox" name='options' value="5">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Contact Form - 3 hrs</p>
-						</label>
+						<label>Contact Form - 3 hrs</label>
+						<input type="checkbox" name='options' value="3">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Email Auto Responders - 2 hrs</p>
-						</label>
+						<label>Email Auto Responders - 2 hrs</label>
+						<input type="checkbox" name='options' value="2">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Custom Blog - 6 hrs</p>
-						</label>
+						<label>Custom Blog - 6 hrs</label>
+						<input type="checkbox" name='options' value="6">
 					</div>
 					
 				
 					<h3 class="h3">Search Engine Optimization</h3>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Meta Tag Keyword Optimization  - 5 hrs</p>
-						</label>
+						<label>Meta Tag Keyword Optimization  - 5 hrs</label>
+						<input type="checkbox" name='options' value="5">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>Link Building - 6 hrs</p>
-						</label>
+						<label>Link Building - 6 hrs</label>
+						<input type="checkbox" name='options' value="6">
 					</div>
 					
 					<div class="checkbox">
-						<label>
-						<input type="checkbox" value="">
-						<p>User Traffic Reports - 1 hr</p>
-						</label>
+						<label>User Traffic Reports - 1 hr</label>
+						<input type="checkbox" name='options' value="1">
 					</div>
 					
 					<h2 class="h2">Total</h2>
 					<hr>
-					<p>Budget:</p>
-					<p>Total Hours:</p>
-					<p>Total Cost:</p>
+					<p><b>Budget:</b> $<span class='budget'>0</span></p>
+					<p><b>Total Hours:</b> <span class='total-hours'>0</span></p>
+					<p><b>Total Cost:</b> $<span class='total-cost'>0.00</span></p>
 			
 			</div><!-- end of col -->
 		</div><!-- end of row -->
@@ -327,11 +288,10 @@
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- include external js -->
+	<script src="js/bidcalculator.js"></script>	
 	
-	<script type="text/javascript">
-		$('.ielements').popover();
-	</script>
 </body>
 </html>
