@@ -49,6 +49,16 @@
 			<p>
 				Use the application below to receive a bid for web services. Select from the list of options and view the corresponding hours of development and associate costs. Your total will be dynamically calculated and compared to your budget in real-time.
 			</p>
+			
+			<button type='button' class='btn btn-default'>
+				<span class='glyphicon glyphicon-ok-sign'></span> Preview Bid
+			</button>
+				
+			<button type='button' class='btn btn-primary'>
+				<span class='glyphicon glyphicon-print'></span> Print Bid
+		  	</button>
+			
+			
 		</div>
 	</div><!-- end of jumbotron -->
 	
@@ -229,7 +239,7 @@
 						
 						<h2 class='h2'>Total</h2>
 						<hr>
-						<p class='totals'>Budget: $<span class='budget'>0</span></p>
+						<p class='totals'>Budget: $<span class='budget'>0.00</span></p>
 						<p class='totals'>Total Hours: <span class='total-hours'>0</span></p>
 						<p class='totals'>Total Cost: $<span class='total-cost'>0.00</span></p>
 				
