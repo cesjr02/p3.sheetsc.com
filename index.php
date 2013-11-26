@@ -71,46 +71,49 @@
 				<div class='col-md-12'>			
 					<h2 class='h2' >Client Information</h2>
 					<hr>
-					<p class='error'>* required field</p>
-							<div class='form-group'>
-								<label>Client Name<span class="error"> *</span></label>
-								
-								<input class='form-control input-lg' placeholder='Enter name' required>
-								
-							</div>
-							
-							<div class='form-group'>
-								<label>Project Name<span class="error"> *</span></label>
-								<input class='form-control input-lg' placeholder='Enter project name' required>
-							</div>
-							
-							<div class='form-group'>
-								<label>Phone</label>
-								<input type='tel' class='form-control input-lg' placeholder='Enter phone number'>
-							</div>
-							
-							<div class='form-group'>
-								<label>Address</label>
-								<input class='form-control input-lg' placeholder='Enter address'>
-							</div>
-							
-							<div class='form-group'>
-								<label>Date<span class="error"> *</span></label>
-								<input type='date' class='form-control input-lg' required>
-							</div>	
-							
-							<div class='form-group'>
-								<label>Budget<span class="error"> *</span></label>
-								<input class='form-control input-lg' name='budget' placeholder='Enter your budget' maxlength="4" required>
-							</div>	
-							
-							
 					
+					<p><span class='label label-info'>required</span></p>
+					
+					
+						<div class='form-group'>
+							<label class='sr-only'>Client Name</label>				
+							<input type='text' class='form-control input-lg' placeholder='client name' id='inputinfo'>
+						</div>
+							<br>
+							
+						<div class='form-group'>
+							<label class='sr-only'>Project Name</label>
+							<input type='text' class='form-control input-lg' placeholder='project name'>
+						</div>
+							<br>
+							
+						<div class='form-group'>
+						    <label class='sr-only'>Phone</label>
+						    <input type='tel' class='form-control input-lg' placeholder='phone number'>
+						</div>
+						<br>
+						
+						<div class='form-group'>
+						    <label class='sr-only'>Address</label>
+						    <input type='text' class='form-control input-lg' placeholder='address'>
+						</div>
+						<br>
+						
+						<div class='form-group'>
+						    <label class='sr-only'>Date</label>
+						    <input type='date' class='form-control input-lg'>
+						</div>
+						<br>	
+						
+						<div class='form-group'>
+						    <label class='sr-only'>Budget</label>
+						    <input type='text' class='form-control input-lg' name='budget' placeholder='enter your budget' maxlength='4'>
+					</div>		
 				</div><!-- end of col -->	
 			</div><!-- end of row -->
 		</div><!-- end of container -->
 	
-				
+					
 		<!-- frontend options -->		
 		<div class='container'>
 			<div class='row'>
@@ -187,6 +190,7 @@
 						</div>		
 				</div>
 				
+
 				
 				<!-- backend development options -->
 				<div class='col-md-6'>
@@ -235,11 +239,11 @@
 						<div class='checkbox'>
 							<label>User Traffic Reports - 1 hr</label>
 							<input type='checkbox' name='options' value='1'>
-						</div>
-						
+						</div>						
 				</div><!-- end of col -->
 			</div><!-- end of row -->
 		</div><!-- end of container -->
+
 		
 		<!-- totals and budget comparison -->
 		<div class='container'>
@@ -257,6 +261,7 @@
 				</tr>				
 			</table>
 		</div><!-- end of container -->
+
 	
 		<!-- summary of work or contractual terms -->
 		<div class='container'>
@@ -267,6 +272,7 @@
 					<textarea class='form-control' rows='6'></textarea>
 				</div>
 		</div><!-- end of container -->
+
 		
 		<!-- modal for form reset -->
 		<div class='modal fade' id='reset'>
@@ -307,9 +313,6 @@
 			<span class='glyphicon glyphicon-print'></span> Print Bid
 	  	</button>
 	</div>
-	
-	
-
 		
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
