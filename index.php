@@ -237,17 +237,27 @@
 							<input type='checkbox' name='options' value='1'>
 						</div>
 						
-						<h2 class='h2'>Total</h2>
-						<hr>
-						<p class='totals'>Budget: $<span class='budget'>0.00</span></p>
-						<p class='totals'>Total Hours: <span class='total-hours'>0</span></p>
-						<p class='totals'>Total Cost: $<span class='total-cost'>0.00</span></p>
-				
 				</div><!-- end of col -->
 			</div><!-- end of row -->
 		</div><!-- end of container -->
 		
-		
+		<!-- totals and budget comparison -->
+		<div class='container'>
+			<h2 class='h2'>Totals</h2>
+			<table class='table'>
+				<tr class='table-header'>
+					<th><p class='totals'>Budget</p></th>
+					<th><p class='totals'>Total Hours</p></th>
+					<th><p class='totals'>Total Cost</p></th>
+				</tr>
+				<tr>
+					<td><p class='totals'> $<span class='budget'>0.00</span></p></td>
+					<td><p class='totals total-hours'>0</p></td>
+					<td><p class='totals'> $<span class='total-cost'>0.00</span></p></td>
+				</tr>				
+			</table>
+		</div><!-- end of container -->
+	
 		<!-- summary of work or contractual terms -->
 		<div class='container'>
 			<h2 class='h2'>Agreement</h2>
