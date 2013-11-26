@@ -6,6 +6,10 @@ hr {
 	margin-top: 0;
 }
 
+.table-header {
+	color: #6a88ac;
+}
+
 /* text */
 
 .h1 {
@@ -31,7 +35,7 @@ hr {
 }
 
 .totals {
-	font-size: 19px;
+	font-size: 18px;
 	font-weight: 300;
 }
 
