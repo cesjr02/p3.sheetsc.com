@@ -15,6 +15,8 @@
 	<![endif]-->
 </head>
 <body>
+
+<div id='main'>
 	<div class='navbar navbar-inverse navbar-fixed-top'>
 		<div class='container'>
 			<div class='navbar-header'>
@@ -33,8 +35,7 @@
 				
 				<ul class='nav navbar-nav navbar-right'>
 					<li class='active'><a href='#'>Home</a></li>
-					<li><a href='#'>Preview</a></li>
-					<li><a href='#'>Print</a></li>
+					<li><a href='#' class='preview_btn'>Preview</a></li>
 					<li><a href='#reset' data-toggle='modal'>Reset</a></li>
 				</ul>
 			</div>
@@ -50,14 +51,9 @@
 				Use the application below to receive a bid for web services. Select from the list of options and view the corresponding hours of development and associate costs. Your total will be dynamically calculated and compared to your budget in real-time.
 			</p>
 			
-			<button type='button' class='btn btn-default'>
+			<button type='button' class='btn btn-primary preview_btn'>
 				<span class='glyphicon glyphicon-ok-sign'></span> Preview Bid
 			</button>
-				
-			<button type='button' class='btn btn-primary'>
-				<span class='glyphicon glyphicon-print'></span> Print Bid
-		  	</button>
-			
 			
 		</div>
 	</div><!-- end of jumbotron -->
@@ -77,31 +73,19 @@
 					
 						<div class='form-group'>
 							<label class='sr-only'>Client Name</label>				
-							<input type='text' class='form-control input-lg' placeholder='client name' id='inputinfo'>
+							<input type='text' class='form-control input-lg' placeholder='client name' id='clientname'>
 						</div>
 							<br>
 							
 						<div class='form-group'>
 							<label class='sr-only'>Project Name</label>
-							<input type='text' class='form-control input-lg' placeholder='project name'>
+							<input type='text' class='form-control input-lg' placeholder='project name' id='projectname'>
 						</div>
 							<br>
-							
-						<div class='form-group'>
-						    <label class='sr-only'>Phone</label>
-						    <input type='tel' class='form-control input-lg' placeholder='phone number'>
-						</div>
-						<br>
-						
-						<div class='form-group'>
-						    <label class='sr-only'>Address</label>
-						    <input type='text' class='form-control input-lg' placeholder='address'>
-						</div>
-						<br>
 						
 						<div class='form-group'>
 						    <label class='sr-only'>Date</label>
-						    <input type='date' class='form-control input-lg'>
+						    <input type='date' class='form-control input-lg' id='date'>
 						</div>
 						<br>	
 						
@@ -112,6 +96,11 @@
 				</div><!-- end of col -->	
 			</div><!-- end of row -->
 		</div><!-- end of container -->
+	
+		<div id='contract'>
+		
+		</div>
+		
 	
 					
 		<!-- frontend options -->		
@@ -250,7 +239,7 @@
 			<h2 class='h2'>Totals</h2>
 			<table class='table'>
 				<tr class='table-header'>
-					<th><p class='totals'>Budget</p></th>
+					<th><p class='totals'>Client Budget</p></th>
 					<th><p class='totals'>Total Hours</p></th>
 					<th><p class='totals'>Total Cost</p></th>
 				</tr>
@@ -269,7 +258,7 @@
 			<hr>
 				<div class='form-group'>
 					<label>(for developer use only)</label>
-					<textarea class='form-control' rows='6'></textarea>
+					<textarea class='form-control' rows='6' id='agreement' maxlength='800'></textarea>
 				</div>
 		</div><!-- end of container -->
 
@@ -287,14 +276,20 @@
 					</div>
 						<div class='modal-footer'>
 						<button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
-						<button type='button' class='btn btn-primary' id='reset2'>Reset</button>
+						<button type='button' class='btn btn-primary' data-dismiss='modal' id='reset2'>Reset</button>
 					</div>
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-	
+		</div><!-- /.modal -->	
 	</form>
-	
+
+
+	<div class='container'>
+		<button type='button' class='btn btn-primary preview_btn'>
+			<span class='glyphicon glyphicon-ok-sign'></span> Preview Bid
+	  	</button>
+	</div>
+
 
 	<!-- footer -->
 	<div class='navbar navbar-default navbar-fixed-bottom'>
@@ -303,16 +298,112 @@
 		</div>	
 	</div>
 	
-	
-	<div class='container'>
-		<button type='button' class='btn btn-default'>
-			<span class='glyphicon glyphicon-ok-sign'></span> Preview Bid
-	  	</button>
+</div><!-- end of main -->
+
+<!-- preview -->
+<div id='preview'>
+	<div class="container">
+		<div class="row">
+			<div class="span16">
+
+			<style type="text/css" media="all">
+				@media print {
+				html, body {
+	            margin: 0;
+	            padding: 0;
+	            background: #FFF; 
+	            font-size: 9.5pt;
+				}
 				
-		<button type='button' class='btn btn-primary'>
-			<span class='glyphicon glyphicon-print'></span> Print Bid
-	  	</button>
+				#printbuttons {
+					display: none;
+				}
+				
+				@page {
+				margin: 6em;
+				}
+				
+				.container, .container div {
+				margin: 0;
+				padding: 0;
+				}
+				
+				.template { 
+				overflow: hidden;
+				}
+				
+				
+				
+			</style>
+
+		      <div class="template_holder">
+				  <div class="template">
+			  			<div>
+			  			
+				  			<h2><span class='clientname-output'>Client Name</span></h2>
+				  			<p>Project: <span class='projectname-output'>newproject.com</span><br />
+				  			Date: <span id='date-output'>Enter Date</span></p>
+				  		
+				  			<p><span class='clientname-output'>John Smith</span>,</p>
+				  			<p>Below is an estimate for <span class='projectname-output'>newproject.com</span>.</p>
+				  			<br>
+				  			
+				  			<table class='table'>
+					  			<tr>
+					  			<td>Your Budget:</td><td>$<span class='budget'>$0.00</span></td>
+					  			</tr>
+					  			
+					  			<tr>
+					  			<td>Total Hours:</td><td><span class='total-hours'>0</span></td>
+					  			</tr>
+					  			
+					  			<tr>
+					  			<td>Total Cost:</td><td>$<span class='total-cost'>$0.00</span></td>
+					  			</tr>
+				  			</table>
+				  			
+				  			<div id='agreementformat'>
+								<p><span class='agreement-output'>Contractual agreement and terms</span></p>
+				  			</div>
+				  			
+							<p>Thank you,</p>
+							
+							<p>
+							Vantage Point Creative, LLC<br />
+							Suite 1900, 100 South Fifth Street<br />
+							Minneapolis, MN 55402<br />
+							(612) 840-9805
+							</p>
+							
+							<div id='dateandsign'>
+								<p>Signature: _______________________________   Date: ______________________</p>
+							</div>		
+		
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id='printbuttons'>
+			
+				<button type='button' class='btn btn-default return_btn'>
+					<span class='glyphicon glyphicon-pencil'></span> Edit
+				</button>
+				
+				<button onclick='printfunction()' type='button' class='btn btn-primary'>
+					<span class='glyphicon glyphicon-print'></span> Print Bid
+				</button>
+			
+			</div>
+			
+			
+		</div>
 	</div>
+	
+
+
+
+</div><!-- end of preview -->
 		
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -322,6 +413,7 @@
 	<!-- include external js -->
 	<script src='js/bidcalculator.js'></script>	
 	<script src='js/formreset.js'></script>
+	<script src='js/preview.js'></script>
 	
 </body>
 </html>
