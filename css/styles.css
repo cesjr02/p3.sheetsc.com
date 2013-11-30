@@ -49,3 +49,32 @@ hr {
 	background-color: #78a6de;
 	border-color: #5d92d2;
 }
+
+
+/* preview div */
+
+#agreementformat {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#budget-output, #hours-output, #cost-output {
+	float: right;
+}
+
+#dateandsign {
+	margin-top: 60px;
+}
+
+#printbuttons {
+	margin-top: 40px;
+}
+
+.datespan {
+	margin-left: 100px;
+}
+
+.print {
+	margin-bottom: 0px;
+}
+
