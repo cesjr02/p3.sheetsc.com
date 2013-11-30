@@ -12,6 +12,10 @@ $(function() {
         // change color style back to black if red or green
         $('.total-cost').css('color', 'black');
         
+        $.modal.close();
+        
     });
     
 });
+
+
