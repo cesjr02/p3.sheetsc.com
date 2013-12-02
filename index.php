@@ -65,7 +65,7 @@
 				<div class='col-md-12'>			
 					<h2 class='h2' >Client Information</h2>
 					<hr>					
-					<p><span class="label label-info">All fields required</span></p>
+					<p><span class="label label-default">All fields required</span></p>
 										
 					<div class='form-group'>
 						<label class='sr-only'>Client Name</label>				
