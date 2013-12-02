@@ -8,6 +8,12 @@ $(function() {
         $('.total-cost').html("0.00");
         $('.total-hours').html("0");
         $('.budget').html("0.00");
+               
+        // return preview to default values
+        $('.clientname-output').html('Client Name');
+        $('.projectname-output').html('newproject.com');
+        $('#date-output').html('Enter Date');
+        $('.agreement-output').html('Contractual agreement and terms');
         
         // change color style back to black if red or green
         $('.total-cost').css('color', 'black');
