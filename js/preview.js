@@ -10,16 +10,6 @@ $('#clientname').keyup(function() {
 		
 });
 
-$('#date').blur(function() {
-
-	// figure out what the user typed in
-	var date = $(this).val();
-	
-	// inject into output div
-	$('#date-output').html(date);
-		
-});
-
 
 $('#projectname').keyup(function() {
 
@@ -30,6 +20,18 @@ $('#projectname').keyup(function() {
 	$('.projectname-output').html(projectname);	
 	
 });
+
+
+$('#date').blur(function() {
+
+	// figure out what the user typed in
+	var date = $(this).val();
+	
+	// inject into output div
+	$('#date-output').html(date);
+		
+});
+
 
 $('#agreement').blur(function() {
 
@@ -42,14 +44,12 @@ $('#agreement').blur(function() {
 });
 
 
-
-
-
 // button to preview
 $( '.preview_btn' ).click(function() {
 	$('#preview').show();
 	$('#main').hide();
 });
+
 
 // button to return and edit
 $( '.return_btn' ).click(function() {
@@ -58,9 +58,9 @@ $( '.return_btn' ).click(function() {
 });
 
 
-function printfunction()
-{
-window.print();
+// print dialog button
+function printfunction() {
+	window.print();
 }
 
 
