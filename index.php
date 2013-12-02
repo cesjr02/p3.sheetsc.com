@@ -48,7 +48,7 @@
 		<div class='container'>
 			<h1 class='h1'>Welcome.</h1>
 			<p>
-				Use the application below to receive a bid for web services. Select from the list of options and view the corresponding hours of development and associate costs. Your total will be dynamically calculated and compared to your budget in real-time.
+				Use the application below to receive a bid for web services. Select from the list of options and view the corresponding hours of development and associated costs. Your total will be dynamically calculated and compared to your budget in real-time. Click on the preview button to review and print your bid.
 			</p>
 			
 			<button type='button' class='btn btn-primary preview_btn'>
@@ -350,7 +350,7 @@
 				  			
 				  			<table class='table'>
 					  			<tr>
-					  			<td>Your Budget:</td><td>$<span class='budget'>$0.00</span></td>
+					  			<td>Your Budget:</td><td>$<span class='budget'>0.00</span></td>
 					  			</tr>
 					  			
 					  			<tr>
@@ -358,7 +358,7 @@
 					  			</tr>
 					  			
 					  			<tr>
-					  			<td>Total Cost:</td><td>$<span class='total-cost'>$0.00</span></td>
+					  			<td>Total Cost:</td><td>$<span class='total-cost'>0.00</span></td>
 					  			</tr>
 				  			</table>
 				  			
@@ -376,8 +376,18 @@
 							</p>
 							
 							<div id='dateandsign'>
-								<p>Signature: _______________________________   Date: ______________________</p>
-							</div>		
+								<p>
+								    <span>Client Signature:</span>
+								    <span style="border-bottom: 1px solid black; display: inline-block; width: 150px;"> </span>
+
+								    <span>Date:</span>
+								    <span style="border-bottom: 1px solid black; display: inline-block; width: 150px;"> </span>
+								</p>
+							</div>
+							
+							
+							
+								
 		
 						</div>
 					</div>
