@@ -1,3 +1,4 @@
+// reset form and preview div
 $(function() {
     $('#reset2').click(function() {
     
@@ -18,10 +19,10 @@ $(function() {
         // change color style back to black if red or green
         $('.total-cost').css('color', 'black');
         
+        // close modal window
         $.modal.close();
         
-    });
-    
+    });    
 });
 
 
