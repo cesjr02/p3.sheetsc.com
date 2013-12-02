@@ -17,6 +17,8 @@ function calculate() {
 	var hours	= 0;
 	var total	= 0;
 	
+	// amount to signify that you are close to the red
+	var orangeMargin = 0.2;
 	
 	// loop through each checkbox
 	options.each(function() {	
@@ -27,10 +29,15 @@ function calculate() {
 	
 	
 	// budget comparison
-	if(budget != '') {
+	if (budget != '') {
 		if(total >= budget) {
 			$('.total-cost').css('color', 'red');
 		}
+		
+		else if (total >= (budget - (orangeMargin * budget))) {
+			$('.total-cost').css('color', 'orange');
+		}
+		
 		else {
 			$('.total-cost').css('color', 'green');
 			
