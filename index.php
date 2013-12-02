@@ -6,6 +6,8 @@
 	<!-- Bootstrap -->
 	<link href='css/bootstrap.min.css' rel='stylesheet'>
 	<link href='css/styles.css' rel='stylesheet'>
+	<!-- stylesheet for form validator -->
+	<link rel="stylesheet" href="css/formly.css" type="text/css" />
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,37 +63,37 @@
 	
 	
 	<!-- form for client information -->
-	<form role='form' id='form'>
+	<form action='' role='form' id='myForm'>
 		<div class='container'>
 			<div class='row'>
 				<div class='col-md-12'>			
 					<h2 class='h2' >Client Information</h2>
 					<hr>
 					
-					<p><span class='label label-info'>required</span></p>
+					<p>required fields*</p>
 					
 					
 						<div class='form-group'>
 							<label class='sr-only'>Client Name</label>				
-							<input type='text' class='form-control input-lg' placeholder='client name' id='clientname'>
+							<input type='text' class='form-control input-lg' placeholder='client name' id='clientname' data-validation='length' data-validation-length='3-25' data-validation-error-msg='Client name must have between 3-25 characters' data-validation-help='Enter your name (3-25 characters)'>
 						</div>
 							<br>
 							
 						<div class='form-group'>
 							<label class='sr-only'>Project Name</label>
-							<input type='text' class='form-control input-lg' placeholder='project name' id='projectname'>
+							<input type='text' class='form-control input-lg' placeholder='project name' id='projectname' data-validation='length' data-validation-length='3-25' data-validation-error-msg='Project name must have between 3-25 characters' data-validation-help='Enter a name for your project.'>
 						</div>
 							<br>
 						
 						<div class='form-group'>
 						    <label class='sr-only'>Date</label>
-						    <input type='date' class='form-control input-lg' id='date'>
+						    <input type='date' class='form-control input-lg' id='date' >
 						</div>
 						<br>	
 						
 						<div class='form-group'>
 						    <label class='sr-only'>Budget</label>
-						    <input type='text' class='form-control input-lg' name='budget' placeholder='enter your budget' maxlength='4'>
+						    <input type='text' class='form-control input-lg' name='budget' placeholder='enter your budget' data-validation='number' data-validation-allowing='range[1;9999]' maxlength='4' data-validation-error-msg='Enter your budget' data-validation-help='Enter budget as a whole number (1-9999)'>
 					</div>		
 				</div><!-- end of col -->	
 			</div><!-- end of row -->
@@ -258,7 +260,7 @@
 			<hr>
 				<div class='form-group'>
 					<label>(for developer use only)</label>
-					<textarea class='form-control' rows='6' id='agreement' maxlength='800'></textarea>
+					<textarea class='form-control' rows='6' id='agreement' data-validation='length' data-validation-length='50-800' data-validation-error-msg='This text area must contain between 50-800 characters'></textarea>
 				</div>
 		</div><!-- end of container -->
 
@@ -384,11 +386,6 @@
 								    <span style="border-bottom: 1px solid black; display: inline-block; width: 150px;"> </span>
 								</p>
 							</div>
-							
-							
-							
-								
-		
 						</div>
 					</div>
 				</div>
@@ -404,26 +401,29 @@
 					<span class='glyphicon glyphicon-print'></span> Print Bid
 				</button>
 			
-			</div>
-			
-			
+			</div>			
 		</div>
 	</div>
-	
-
-
-
 </div><!-- end of preview -->
 		
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src='https://code.jquery.com/jquery.js'></script>
+	
+	<!-- jQuery UI -->
+	<script src='http://code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+	
 	<!-- include all compiled plugins (below), or include individual files as needed -->
 	<script src='js/bootstrap.min.js'></script>
+	
 	<!-- include external js -->
 	<script src='js/bidcalculator.js'></script>	
 	<script src='js/formreset.js'></script>
 	<script src='js/preview.js'></script>
 	
+	<!-- js for form validation -->
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.27/jquery.form-validator.min.js'></script>
+	<script src='js/formvalidate.js'></script>
+
 </body>
 </html>
