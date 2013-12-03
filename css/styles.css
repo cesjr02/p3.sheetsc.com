@@ -83,20 +83,20 @@ html, body {
 	background: #FFF; 
 	font-size: 9.5pt;
 }
-				
+
 #printbuttons {
 	display: none;
 }
-				
+
 @page {
 	margin: 6em;
 }
-				
+
 .container, .container div {
 	margin: 0;
 	padding: 0;
 }
-				
+
 .template { 
 	overflow: hidden;
 }

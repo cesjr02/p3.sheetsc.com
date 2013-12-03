@@ -31,7 +31,7 @@ function calculate() {
 		if(total >= budget) {
 			$('.total-cost').css('color', 'red');
 		}
-		
+
 		else if (total >= (budget - (orangeMargin * budget))) {
 			$('.total-cost').css('color', 'orange');
 		}

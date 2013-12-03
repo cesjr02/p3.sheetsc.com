@@ -7,10 +7,10 @@ $('#clientname').keyup(function() {
 
 	// figure out what the user typed in
 	var clientname = $(this).val();
-	
+
 	// inject into output
 	$('.clientname-output').html(clientname);
-		
+
 });
 
 
@@ -19,10 +19,10 @@ $('#projectname').keyup(function() {
 
 	// figure out what the user typed in
 	var projectname = $(this).val();
-	
+
 	// inject into output
 	$('.projectname-output').html(projectname);	
-	
+
 });
 
 
@@ -31,10 +31,10 @@ $('#date').blur(function() {
 
 	// figure out what the user typed in
 	var date = $(this).val();
-	
+
 	// inject into output
 	$('#date-output').html(date);
-		
+
 });
 
 
@@ -43,10 +43,10 @@ $('#agreement').blur(function() {
 
 	// figure out what the user typed in
 	var agreement = $(this).val();
-	
+
 	// inject into output
 	$('.agreement-output').html(agreement);	
-	
+
 });
 
 
