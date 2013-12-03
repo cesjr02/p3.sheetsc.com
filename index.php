@@ -87,7 +87,7 @@
 						
 					<div class='form-group'>
 						<label class='sr-only'>Date</label>
-						<input type='text' class='form-control input-lg datepicker' id='date'  placeholder='enter date'>
+						<input type='date' class='form-control input-lg' id='date'>
 					</div>
 					<br>	
 						
