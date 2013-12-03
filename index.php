@@ -7,7 +7,13 @@
 	
 	<!-- Bootstrap -->
 	<link href='css/bootstrap.min.css' rel='stylesheet'>
+	<link href='css/jquery-ui-1.10.3.custom.min.css' rel='stylesheet'>
+	
+	<!-- link to external style sheet -->
 	<link href='css/styles.css' rel='stylesheet'>
+	
+	<!-- jQuery theme for datepicker -->
+	<link href='css/smoothness/jquery-ui-1.10.3.custom.min.css' rel='stylesheet'>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +66,7 @@
 		
 	
 	<!-- form for client information -->
-	<form action='' role='form' id='myForm'>
+	<form role='form' id='myForm'>
 		<div class='container'>
 			<div class='row'>
 				<div class='col-md-12'>			
@@ -82,7 +88,7 @@
 						
 					<div class='form-group'>
 						<label class='sr-only'>Date</label>
-						<input type='date' class='form-control input-lg' id='date' >
+						<input type='text' class='form-control input-lg' id='date' placeholder='enter date'>
 					</div>
 					<br>	
 						
@@ -377,6 +383,7 @@
 	<script src='js/bidcalculator.js'></script>	
 	<script src='js/formreset.js'></script>
 	<script src='js/preview.js'></script>
+	<script src='js/datepicker.js'></script>
 	
 	<!-- js for form validation -->
 	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.27/jquery.form-validator.min.js'></script>
