@@ -7,7 +7,6 @@
 	
 	<!-- Bootstrap -->
 	<link href='css/bootstrap.min.css' rel='stylesheet'>
-	<link href='css/jquery-ui-1.10.3.custom.min.css' rel='stylesheet'>
 	
 	<!-- link to external style sheet -->
 	<link href='css/styles.css' rel='stylesheet'>
@@ -88,7 +87,7 @@
 						
 					<div class='form-group'>
 						<label class='sr-only'>Date</label>
-						<input type='text' class='form-control input-lg' id='date' placeholder='enter date'>
+						<input type='text' class='form-control input-lg datepicker' id='date'  placeholder='enter date'>
 					</div>
 					<br>	
 						
@@ -255,7 +254,7 @@
 			<hr>
 			<div class='form-group'>
 				<label>(for developer use only)</label>
-				<textarea class='form-control' rows='6' id='agreement' data-validation='length' data-validation-length='50-800' data-validation-error-msg='This text area must contain between 50-800 characters'></textarea>
+				<textarea class='form-control' rows='6' id='agreement' data-validation='length' data-validation-length='50-800' data-validation-error-msg='Agreement must be long enough for for contract terms (50-800 characters)' data-validation-help='Enter agreement terms (50-800 characters)'></textarea>
 			</div>
 		</div><!-- end of container -->
 

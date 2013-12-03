@@ -1,5 +1,4 @@
-$('#date').datepicker({ 
+$('.datepicker').datepicker({ 
 	dateFormat: 'MM d, yy', 
-	changeMonth: false
 });
 
