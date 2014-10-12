@@ -234,7 +234,7 @@
 
 	
 		<!-- summary of work or contractual terms -->
-		<div class='container' id="agreement">
+		<div class='container'>
 			<h2 class='h2'>Agreement</h2>
 			<hr>
 			<div class='form-group'>
@@ -273,7 +273,7 @@
 
 
 	<!-- footer -->
-	<div class='navbar navbar-default navbar-fixed-bottom'>
+	<footer class='navbar navbar-default navbar-fixed-bottom'>
 		<!-- totals and budget comparison -->
 		<div class='container'>
 			<h2 class='h2'>Totals</h2>
@@ -290,7 +290,7 @@
 				</tr>				
 			</table>
 		</div><!-- end of container -->
-	</div>
+	</footer>
 	
 </div><!-- end of main -->
 
@@ -325,7 +325,7 @@
 							</table>
 							
 							<div id='agreementformat'>
-								<p><span class='agreement-output'>Contractual agreement and terms</span></p>
+								<p><span id='agreement-output'>Contractual agreement and terms</span></p>
 							</div>
 							
 							<p>Thank you,</p>
