@@ -230,7 +230,22 @@
 		</div><!-- end of container -->
 
 		
-		
+		<!-- totals and budget comparison -->
+		<div class='container'>
+			<h2 class='h2'>Totals</h2>
+			<table class='table'>
+				<tr class='table-header'>
+					<th><p class='totals'>Client Budget</p></th>
+					<th><p class='totals'>Total Hours</p></th>
+					<th><p class='totals'>Total Cost</p></th>
+				</tr>
+				<tr>
+					<td><p class='totals'> $<span class='budget'>0.00</span></p></td>
+					<td><p class='totals total-hours'>0</p></td>
+					<td><p class='totals'> $<span class='total-cost'>0.00</span></p></td>
+				</tr>				
+			</table>
+		</div><!-- end of container -->
 
 	
 		<!-- summary of work or contractual terms -->
@@ -266,31 +281,18 @@
 
 
 	<div class='container'>
-		<button type='button' class='btn btn-primary preview_btn' id='previewBid'>
+		<button type='button' class='btn btn-primary preview_btn'>
 			<span class='glyphicon glyphicon-ok-sign'></span> Preview Bid
 		</button>
 	</div>
 
 
 	<!-- footer -->
-	<footer class='navbar navbar-default navbar-fixed-bottom'>
-		<!-- totals and budget comparison -->
+	<div class='navbar navbar-default navbar-fixed-bottom'>
 		<div class='container'>
-			<h2 class='h2'>Totals</h2>
-			<table class='table'>
-				<tr class='table-header'>
-					<th><p class='totals'>Client Budget</p></th>
-					<th><p class='totals'>Total Hours</p></th>
-					<th><p class='totals'>Total Cost</p></th>
-				</tr>
-				<tr>
-					<td><p class='totals'> $<span class='budget'>0.00</span></p></td>
-					<td><p class='totals total-hours'>0</p></td>
-					<td><p class='totals'> $<span class='total-cost'>0.00</span></p></td>
-				</tr>				
-			</table>
-		</div><!-- end of container -->
-	</footer>
+			<p class='navbar-text pull-right'>Application Developed by CJ Sheets</p>
+		</div>	
+	</div>
 	
 </div><!-- end of main -->
 
@@ -325,7 +327,7 @@
 							</table>
 							
 							<div id='agreementformat'>
-								<p><span id='agreement-output'>Contractual agreement and terms</span></p>
+								<p><span class='agreement-output'>Contractual agreement and terms</span></p>
 							</div>
 							
 							<p>Thank you,</p>
